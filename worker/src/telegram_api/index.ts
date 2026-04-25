@@ -13,7 +13,7 @@ export { sendMailToTelegram }
 api.use("/telegram/*", async (c, next) => {
     const msgs = i18n.getMessagesbyContext(c);
     if (!c.env.TELEGRAM_BOT_TOKEN) {
-        return c.text(msgs.TgBotTokenRequiredMsg, 400);
+        return c.text("Telegram bot is not configured", 400);
     }
     if (!c.env.KV) {
         return c.text(msgs.KVNotAvailableMsg, 400);

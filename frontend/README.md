@@ -1,29 +1,43 @@
-# cloudflare_temp_email
+# Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue 3 frontend for Cloudflare Temp Email.
 
-## Recommended IDE Setup
+## Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```bash
+pnpm install
 ```
 
-### Compile and Hot-Reload for Development
+## Development
 
-```sh
-npm run dev
+```bash
+pnpm dev
 ```
 
-### Compile and Minify for Production
+## Build
 
-```sh
-npm run build
+```bash
+pnpm build
 ```
+
+## Deploy
+
+```bash
+pnpm deploy
+```
+
+## Environment Variables
+
+| Variable | Description |
+|----------|-------------|
+| `VITE_API_BASE` | Worker API URL |
+| `VITE_IS_TELEGRAM` | Telegram mini app mode |
+
+## Tech Stack
+
+- Vue 3
+- Naive UI
+- Vue Router
+- Vue I18n
+- Axios
+- Vite

@@ -25,6 +25,7 @@ api.get('/open_api/settings', async (c) => {
         "minAddressLen": utils.getIntValue(c.env.MIN_ADDRESS_LEN, 1),
         "maxAddressLen": utils.getIntValue(c.env.MAX_ADDRESS_LEN, 30),
         "defaultDomains": utils.getDefaultDomains(c),
+        "defaultLang": c.env.DEFAULT_LANG || "zh",
         "domains": utils.getDomains(c),
         "randomSubdomainDomains": utils.getRandomSubdomainDomains(c),
         "domainLabels": utils.getStringArray(c.env.DOMAIN_LABELS),
